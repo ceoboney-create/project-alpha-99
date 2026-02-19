@@ -585,5 +585,21 @@
     document.getElementById('prog-text').textContent = done + ' of ' + all.length + ' complete';
   }
 </script>
+<script>
+  function check(li) {
+    li.classList.toggle('done');
+    const all = document.querySelectorAll('#checklist li');
+    const done = document.querySelectorAll('#checklist li.done').length;
+    const pct = Math.round((done / all.length) * 100);
+    document.getElementById('prog-fill').style.width = pct + '%';
+    document.getElementById('prog-text').textContent = done + ' of ' + all.length + ' complete';
+  }
+</script>
+
+<!-- LEADSLEAP TRACKING -->
+<script data-cfasync="false" >ll_r="freegameguys";ll_bc="#444444";ll_hc="#000000";ll_tc="#555a69";ll_cc="#ffff00";ll_dc="#8891a8";ll_w="";ll_nf="0";ll_nc="1";ll_nh="0";ll_nm="0";ll_np="1";ll_pa="0";ll_nt="0";ll_wt="1";ll_fw="1";ll_n="4";ll_cl="";ll_s="w";</script>
+<script data-cfasync="false" src="https://w.leadsleap.com/js.js"></script>
+
 </body>
+</html></body>
 </html>
